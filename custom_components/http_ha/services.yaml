@@ -1,0 +1,47 @@
+request:
+  name: Send HTTP request
+  description: Make an HTTP request from Home Assistant automation or script.
+  fields:
+    method:
+      name: Method
+      description: HTTP method to use.
+      required: true
+      default: GET
+      selector:
+        select:
+          options:
+            - GET
+            - POST
+            - PUT
+            - PATCH
+            - DELETE
+            - HEAD
+            - OPTIONS
+    url:
+      name: URL
+      description: Full URL to call.
+      required: true
+      example: https://example.com/api
+      selector:
+        text:
+    headers:
+      name: Headers
+      description: Optional headers in JSON format.
+      example: '{"Authorization": "Bearer token"}'
+      selector:
+        text:
+    body:
+      name: Body
+      description: Optional request body in JSON format.
+      example: '{"name": "value"}'
+      selector:
+        text:
+    timeout:
+      name: Timeout
+      description: Request timeout in seconds.
+      default: 10
+      selector:
+        number:
+          min: 1
+          max: 120
+          mode: box
