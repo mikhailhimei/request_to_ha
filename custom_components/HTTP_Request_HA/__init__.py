@@ -9,12 +9,14 @@ from typing import Any
 import aiohttp
 import voluptuous as vol
 
-from homeassistant.const import CONF_BODY, CONF_HEADERS, CONF_METHOD, CONF_TIMEOUT, CONF_URL
+from homeassistant.const import CONF_HEADERS, CONF_METHOD, CONF_TIMEOUT, CONF_URL
 from homeassistant.core import HomeAssistant, SupportsResponse, ServiceCall
 from homeassistant.exceptions import HomeAssistantError
 from homeassistant.helpers import config_validation as cv
 
-DOMAIN = "http_request"
+CONF_BODY = "body"
+
+DOMAIN = "http_ha"
 SERVICE_REQUEST = "request"
 
 _LOGGER = logging.getLogger(__name__)
