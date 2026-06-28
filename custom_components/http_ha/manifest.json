@@ -8,5 +8,6 @@
   "requirements": [],
   "iot_class": "calculated",
   "integration_type": "service",
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "config_flow": true
 }
