@@ -5,7 +5,7 @@ import voluptuous as vol
 from homeassistant import config_entries
 from homeassistant.core import HomeAssistant
 
-DOMAIN = "HTTP-File-Toolbox"
+DOMAIN = "http_file_toolbox"
 
 
 class ConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
