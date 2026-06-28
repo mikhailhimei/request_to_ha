@@ -5,7 +5,7 @@ import voluptuous as vol
 from homeassistant import config_entries
 from homeassistant.core import HomeAssistant
 
-DOMAIN = "http_ha"
+DOMAIN = "http_request"
 
 
 class ConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):

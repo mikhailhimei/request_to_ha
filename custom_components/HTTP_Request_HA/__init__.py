@@ -14,7 +14,7 @@ from homeassistant.core import HomeAssistant, SupportsResponse, ServiceCall
 from homeassistant.exceptions import HomeAssistantError
 from homeassistant.helpers import config_validation as cv
 
-DOMAIN = "http_ha"
+DOMAIN = "http_request"
 SERVICE_REQUEST = "request"
 
 _LOGGER = logging.getLogger(__name__)

@@ -1,4 +1,4 @@
-# HTTP HA
+# HTTP Request
 
 Custom Home Assistant integration for calling HTTP endpoints from automations and scripts.
 
@@ -6,7 +6,7 @@ Custom Home Assistant integration for calling HTTP endpoints from automations an
 
 ```yaml
 action:
-  - service: http_ha.request
+  - service: http_request.request
     data:
       method: POST
       url: https://example.com/api
